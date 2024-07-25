@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>my-command</ToolCommandName>
+    <PackageOutputPath>./../artifacts</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\build\Build.cs" Link="Build.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\build\_build.csproj" />
+  </ItemGroup>
+
+</Project>
